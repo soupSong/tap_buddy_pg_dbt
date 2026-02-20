@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: source
+    database: tap_buddy  
+    schema: public  
+    tables:
+      - name: crm_students
+      - name: bq_video_events
+      - name: bq_messages
+      - name: bq_assessment_events

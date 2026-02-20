@@ -1,0 +1,27 @@
+[0m02:03:27.864151 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 02:03:27.963425 | bec62205-de59-462a-9b3a-380b60bfcd9a ==============================
+[0m02:03:27.963425 [info ] [MainThread]: Running with dbt=1.11.6
+[0m02:03:27.964426 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Abdul\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt init', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m02:03:40.640673 [debug] [MainThread]: Starter project path: C:\Users\Abdul\Desktop\preworks\TAP\tap_buddy_pg_dbt\.venv\Lib\site-packages\dbt\include\starter_project
+[0m02:03:40.649672 [info ] [MainThread]: 
+Your new dbt project "tap_buddy_pg_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m02:03:40.649672 [info ] [MainThread]: Setting up your profile.
+[0m02:07:59.816181 [info ] [MainThread]: Profile tap_buddy_pg_dbt written to C:\Users\Abdul\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m02:07:59.818189 [debug] [MainThread]: Command `dbt init` succeeded at 02:07:59.818189 after 271.99 seconds
+[0m02:07:59.819184 [debug] [MainThread]: Flushing usage events
