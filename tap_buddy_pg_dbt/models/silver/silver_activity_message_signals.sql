@@ -1,5 +1,3 @@
--- models/silver/silver_activity_message_signals.sql
--- Message signals at grain (student_id, activity_id)
 
 {{ config(materialized='view') }}
 
@@ -33,7 +31,7 @@ agg as (
         min(message_ts) as first_message_ts,
         max(message_ts) as last_message_ts,
 
-        -- type-level counts (handy)
+        -- type-level counts
         sum(case when message_type = 'video_link' then 1 else 0 end) as video_link_count,
         sum(case when message_type = 'quiz_start_prompt' then 1 else 0 end) as quiz_prompt_count,
         sum(case when message_type = 'project_prompt' then 1 else 0 end) as project_prompt_count,

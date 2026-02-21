@@ -1,5 +1,4 @@
--- models/silver/silver_activity_spine.sql
--- One row per (student_id, activity_id) across all event/message sources
+
 
 {{ config(materialized='view') }}
 

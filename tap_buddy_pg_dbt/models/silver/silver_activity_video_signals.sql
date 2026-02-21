@@ -1,5 +1,3 @@
--- models/silver/silver_activity_video_signals.sql
--- Video component signals at grain (student_id, activity_id)
 
 {{ config(materialized='view') }}
 

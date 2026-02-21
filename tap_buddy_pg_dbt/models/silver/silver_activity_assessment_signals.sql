@@ -1,6 +1,4 @@
--- models/silver/silver_activity_assessment_signals.sql
--- Quiz + project signals at grain (student_id, activity_id)
--- Outputs separate columns for quiz and project.
+
 
 {{ config(materialized='view') }}
 
