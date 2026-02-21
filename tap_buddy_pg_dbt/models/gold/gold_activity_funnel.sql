@@ -9,12 +9,11 @@ with ae as (
 
         case when coalesce(video_max_progress, 0) > 0 then 1 else 0 end as watched_video_i,
 
-        -- With your 10-column table, best available proxy:
-        -- attempted ~= completed (until you add quiz_is_started)
+        -- attempted ~= completed
         coalesce(quiz_is_completed, 0) as quiz_attempted_i,
         coalesce(quiz_is_completed, 0) as quiz_completed_i,
 
-        -- submitted ~= completed (until you add project_is_started / submit event)
+        -- submitted ~= completed
         coalesce(project_is_completed, 0) as project_submitted_i
 
     from {{ ref('gold_activity_engagement') }}

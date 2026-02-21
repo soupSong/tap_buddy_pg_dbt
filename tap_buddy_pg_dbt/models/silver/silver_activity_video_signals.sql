@@ -106,7 +106,7 @@ select
 
     coalesce(sc.video_session_count, 0) as video_session_count,
 
-    -- "best session" max progress (often a nicer signal than raw max if resets are common)
+    -- "best session" max progress
     bs.session_max_progress as best_session_max_progress,
 
     a.has_video_started,
@@ -120,3 +120,5 @@ left join best_session bs
     on a.student_id = bs.student_id
    and a.activity_id = bs.activity_id
    and bs.rn = 1
+
+
