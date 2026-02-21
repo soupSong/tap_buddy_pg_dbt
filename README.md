@@ -293,3 +293,7 @@ dbt test
 | `ModuleNotFoundError: No module named 'dbt'` | Make sure `dbt-core` and `dbt-postgres` are installed and your virtual environment is activated. |
 | Schemas not created | Run `dbt run` — dbt creates `bronze`, `silver`, and `gold` schemas automatically on first run via the custom `generate_schema` macro. |
 | `data/old/` folder | Contains earlier versions of the CSV files — safe to ignore. Only the CSVs in `data/` (top level) are used. |
+
+
+
+<!-- You can then use PG admin to query the resulting materialised tables -->
