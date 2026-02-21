@@ -1,4 +1,4 @@
-{# {{ config(materialized='table') }} #}
+{{ config(materialized='table') }}
 
 with spine as (
     select student_id, activity_id
