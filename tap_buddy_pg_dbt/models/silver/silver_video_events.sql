@@ -5,11 +5,9 @@ with e as (
         student_id,
         activity_id as raw_activity_id,
         event_ts::timestamp as event_ts,
-        assessment_type,
         event_type,
-        score::float as score,
-        max_score::float as max_score
-    from {{ ref('bronze_bq_assessment_events') }}
+        progress_percent::float as progress_percent
+    from {{ ref('bronze_bq_video_events') }}
 ),
 
 w as (
@@ -27,12 +25,10 @@ matched as (
         e.raw_activity_id,
         w.attributed_activity_id as activity_id,
         e.event_ts,
-        e.assessment_type,
         e.event_type,
-        e.score,
-        e.max_score,
+        e.progress_percent,
         row_number() over (
-            partition by e.student_id, e.event_ts, e.assessment_type, e.event_type
+            partition by e.student_id, e.event_ts, e.event_type, coalesce(e.progress_percent, -1)
             order by w.window_start_ts desc
         ) as rn
     from e
@@ -46,9 +42,7 @@ select
     student_id,
     activity_id,
     event_ts,
-    assessment_type,
     event_type,
-    score,
-    max_score
+    progress_percent
 from matched
 where rn = 1

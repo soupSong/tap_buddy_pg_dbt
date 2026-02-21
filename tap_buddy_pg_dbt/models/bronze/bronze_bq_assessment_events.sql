@@ -1,8 +1,4 @@
-{{
-  config(
-    materialized = 'view',
-    )
-}}
+
 
 SELECT
     *

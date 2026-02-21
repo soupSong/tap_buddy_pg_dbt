@@ -1,0 +1,18 @@
+student_id,activity_id,event_ts,assessment_type,event_type,score,max_score
+STU001,ACT-001B,2026-02-16 08:35:00,quiz,started,,
+STU001,ACT-001B,2026-02-16 08:58:00,quiz,completed,,10.0
+STU001,ACT-001B,2026-02-16 08:58:15,quiz,scored,8.5,10.0
+STU002,ACT-002B,2026-02-17 09:15:00,quiz,started,,
+STU003,ACT-003C,2026-02-19 09:10:00,quiz,started,,
+STU003,ACT-003C,2026-02-19 09:35:00,quiz,completed,,100.0
+STU003,ACT-003C,2026-02-19 09:35:12,quiz,scored,70.4,100.0
+STU004,ACT-004B,2026-02-18 08:00:00,project,started,,
+STU005,ACT-005B,2026-02-16 10:20:00,quiz,started,,
+STU005,ACT-005B,2026-02-16 10:38:00,quiz,completed,,100.0
+STU006,ACT-006B,2026-02-18 10:30:00,quiz,started,,
+STU006,ACT-006B,2026-02-18 10:52:00,quiz,completed,,10.0
+STU006,ACT-006B,2026-02-18 10:52:08,quiz,scored,9.5,10.0
+STU007,ACT-007B,2026-02-18 09:10:00,project,started,,
+STU007,ACT-007B,2026-02-20 12:10:00,project,completed,,20.0
+STU007,ACT-007B,2026-02-20 13:10:00,project,scored,17.2,20.0
+STU008,ACT-008B,2026-02-18 08:00:00,quiz,started,,
